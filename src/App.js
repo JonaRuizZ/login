@@ -6,12 +6,12 @@ import Submit from './components/Submit'
 
 const App = () => {
   const [data, setData] = useState ({ email: "", password: "" })
-  const changeData = e => {
+/*   const changeData = e => {
     setData({
       ...data,
       [e.target.name]: e.target.value
     })
-  }
+  } */
 
   const submit = e => {
     e.preventDefault()
