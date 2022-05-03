@@ -1,4 +1,4 @@
-const Field = ({ label , type, value }) => {
+const Field = ({ label , type, value, change }) => {
     return (
         <div className="ed-item form__item">
             <label htmlFor={ type }>
@@ -8,6 +8,7 @@ const Field = ({ label , type, value }) => {
                     name={ type }
                     id={ type }
                     defaultValue={ value }
+                    onChange= { change }
             />
             </label>
         </div>
